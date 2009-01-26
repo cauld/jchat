@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>jChat</title>
+	<link rel="stylesheet" type="text/css" href="lib/yui/reset-fonts-grids/reset-fonts-grids.css" />
+	<link rel="stylesheet" type="text/css" href="lib/yui/button/assets/skins/sam/button.css" />
+	<link rel="stylesheet" type="text/css" href="lib/yui/container/assets/skins/sam/container.css" />
+	<link rel="stylesheet" href="css/jchat.css" />
+</head>
+<body class="yui-skin-sam" onserverload="initAuthentication();">
+	<jaxer:include src="jaxer-include/templates/login.html"></jaxer:include>
+	<jaxer:include src="jaxer-include/templates/chatroom.html"></jaxer:include>
+	<jaxer:include src="jaxer-include/templates/add_chatroom_dialog.html"></jaxer:include>	
+	
+	<!--     
+	Load YUI files.  Note these are individually included to make the sample a simpler to follow,
+	but in production you can get a performance boost with the combo handler:
+	http://developer.yahoo.com/yui/articles/hosting/#configure 
+		 
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.6.0/build/utilities/utilities.js" runat="both"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.6.0/build/animation/animation-min.js&2.6.0/build/element/element-beta-min.js&2.6.0/build/button/button-min.js&2.6.0/build/container/container-min.js&2.6.0/build/selector/selector-beta-min.js"></script>	 
+	-->
+	<script type="text/javascript" src="lib/yui/yahoo-dom-event/yahoo-dom-event.js" runat="both"></script>
+	<script type="text/javascript" src="lib/yui/element/element-beta-min.js"></script>
+	<script type="text/javascript" src="lib/yui/selector/selector-beta-min.js"></script>
+	<script type="text/javascript" src="lib/yui/animation/animation-min.js"></script>
+	<script type="text/javascript" src="lib/yui/utilities/utilities.js"></script>
+	<script type="text/javascript" src="lib/yui/button/button-min.js"></script>
+	<script type="text/javascript" src="lib/yui/container/container-min.js"></script>
+    
+	<!-- For normal production usage it is recommended you minify these external JavaScript files,
+		but they have been left raw for educational purposes in this case. -->
+	<script type="text/javascript" src="lib/activerecordjs/active_record.js" runat="both" autoload="true"></script>
+	<script type="text/javascript" src="jaxer-include/server.js" runat="server"></script>
+	<script type="text/javascript" src="jaxer-include/db.js" runat="server"></script>
+	<script type="text/javascript" src="jaxer-include/authentication.js" runat="server"></script>
+	<script type="text/javascript" src="client.js"></script>
+</body>
+</html>

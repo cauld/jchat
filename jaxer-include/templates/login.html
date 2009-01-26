@@ -1,0 +1,35 @@
+<div style="display: none;" id="doc3" class="yui-t7 login-page">
+	<jaxer:include src="jaxer-include/templates/header.html"></jaxer:include>
+   <div id="bd">
+		<div id="login-form" class="yui-g">
+			<div id="loginRequest">
+				<h1>User Login</h1>
+				<form id="login-form" action="index.html" method="post">
+					<p id="loginMessage" class="warning"></p>
+					<label for="username">Username:</label>
+					<input type="text" size="40" id="username" name="username" value="" />
+					<label for="password">Password:</label>
+					<input type="password" size="40" id="password" name="password" value="" /><br />
+					<input id="user-login" type="button" value="Login" />
+					<a id="create-new-account" href="index.html">Create new account...</a>
+				</form>
+			</div>
+		</div>
+		<div id="registration-form" class="yui-g" style="display: none;">
+			<div id="loginCreate">
+				<h1>User Registration</h1>
+				<form id="new-user-form" action="index.html" method="post">
+					<p id="newAccountMessage" class="warning"></p>
+					<label for="new_username">New Username:</label>
+					<input type="text" size="40" id="new_username" name="new_username" />
+					<label for="new_password">New Password:</label>
+					<input type="password" size="40" id="new_password" name="new_password" />
+					<label for="username">Confirm Password:</label>
+					<input type="password" size="40" id="confirm_password" name="confirm_password" /><br />
+					<input id="create-account" type="button" value="Create" />
+					<input id="cancel-registration" type="button" value="Cancel" />
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

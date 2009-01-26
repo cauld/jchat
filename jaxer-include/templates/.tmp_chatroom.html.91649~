@@ -1,0 +1,50 @@
+<div style="display: none;" id="doc3" class="yui-t6 chatroom-page"> 
+	<jaxer:include src="jaxer-include/templates/header.html"></jaxer:include>
+	<p><span id="welcome_message"></span> (<span id="signout">signout</span>)</p>
+	<div id="bd">
+	<div id="yui-main">
+		<div id="chatroom_container" class="yui-b">
+			<div class="yui-g">
+				<div id="chatroom__1" class="chatroom-header">ChatRoom 1</div>
+				<div id="chatroom__1__details" class="chatroom" style="display: none; height: 0px;">
+					<ul class="chatlog">
+						<li>(14:32:29) cauld: hello everyone</li>
+						<li>(14:32:29) cauld: hello there chad</li>
+					</ul>
+					<div id="chatroom__1" class="chat_entry">
+						<form class="chat_form" method="post" action="index.html">
+							<label>Enter chat message:</label><br />
+							<textarea id="number1"></textarea>
+							<input type="submit" value="Send" />
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="yui-g">
+				<div id="chatroom__2__header" class="chatroom-header">ChatRoom 2</div>
+				<div id="chatroom__2__details" class="chatroom" style="display: none; height: 0px;">
+					<ul class="chatlog">
+						<li>(14:32:29) cauld: hello everyone</li>
+						<li>(14:32:29) cauld: hello there chad</li>
+					</ul>
+					<div id="chatroom__2" class="chat_entry">
+						<form id="blah" class="chat_form" method="post" action="index.html">
+							<label>Enter chat message:</label><br />
+							<textarea id="number2"></textarea>
+							<input type="submit" value="Send" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="userlist_container" class="yui-b">
+		<h2>Users in Chatroom</h2>
+		<ul id="userlist">
+			<li>chad</li>
+			<li>john</li>
+			<li>john2</li>
+		</ul>
+	</div>
+	<jaxer:include src="jaxer-include/templates/footer.html"></jaxer:include>
+</div>

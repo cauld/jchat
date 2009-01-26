@@ -1,0 +1,29 @@
+<div style="display: none;" id="doc3" class="yui-t7 login-page">
+	<jaxer:include src="jaxer-include/templates/header.html"></jaxer:include>
+   <div id="bd">
+		<div class="yui-g">
+			<div id="loginRequest">
+				<h1>Login</h1>
+				<label for="username">Username:</label>
+				<input type="text" size="40" id="username" name="username" />
+				<label for="password">Password:</label>
+				<input type="password" size="40" id="password" name="password" />
+				<a href="index.html">Create new account...</a>
+				<input type="button" value="Login" onclick="createAccount()">
+			</div>
+		</div>
+		<div class="yui-g">
+			<div id="loginCreate">
+				<label for="new_username">New Username:</label>
+				<input type="text" size="40" id="new_username" name="new_username" />
+				<label for="new_password">New Password:</label>
+				<input type="password" size="40" id="new_password" name="new_password" />
+				<label for="username">Confirm Password:</label>
+				<input type="password" size="40" id="confirm_password" name="confirm_password" />
+				<input type="button" value="Create" onclick="createAccount()">
+				<input type="button" value="Cancel" onclick="createAccount()">
+			</div>
+		</div>
+	</div>
+   <jaxer:include src="jaxer-include/templates/footer.html"></jaxer:include>
+</div>
